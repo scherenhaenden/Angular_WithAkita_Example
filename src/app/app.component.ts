@@ -10,7 +10,7 @@ import {parse, stringify, toJSON, fromJSON} from 'flatted';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'AngularReduxCrudExampleV2';
+  title = 'AngularAkitaCrudExampleV2';
   name$ = this.query.select('name');
 
   public myModel= 'anything'
@@ -24,6 +24,8 @@ export class AppComponent {
     console.log('name')
 
   }
+
+
 
   public saverange(): void {
     console.log(this.myModel);

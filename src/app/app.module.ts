@@ -11,6 +11,9 @@ import { NG_ENTITY_SERVICE_CONFIG } from '@datorama/akita-ng-entity-service';
 import { AkitaNgDevtools } from '@datorama/akita-ngdevtools';
 import { AkitaNgRouterStoreModule } from '@datorama/akita-ng-router-store';
 import { environment } from '../environments/environment';
+import { InputSideBModule } from './modules/input-side-b/input-side-b.module';
+import { InputSideAModule } from './modules/input-side-a/input-side-a.module';
+import { GenericComponentsModule } from './modules/generic-components/generic-components.module';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,10 @@ import { environment } from '../environments/environment';
     AppRoutingModule,
     FormsModule,
     environment.production ? [] : AkitaNgDevtools.forRoot(),
-    AkitaNgRouterStoreModule
+    AkitaNgRouterStoreModule,
+    InputSideBModule,
+    InputSideAModule,
+    GenericComponentsModule
   ],
   providers: [SessionService, SessionQuery, SessionStore, { provide: NG_ENTITY_SERVICE_CONFIG, useValue: { baseUrl: 'https://jsonplaceholder.typicode.com' }}],
   bootstrap: [AppComponent]

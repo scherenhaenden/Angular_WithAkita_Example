@@ -6,7 +6,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "AngularReduxCrudExampleV2": {
+    "AngularAkitaCrudExampleV2": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -23,7 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/AngularReduxCrudExampleV2",
+            "outputPath": "dist/AngularAkitaCrudExampleV2",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -75,10 +75,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "AngularReduxCrudExampleV2:build:production"
+              "browserTarget": "AngularAkitaCrudExampleV2:build:production"
             },
             "development": {
-              "browserTarget": "AngularReduxCrudExampleV2:build:development"
+              "browserTarget": "AngularAkitaCrudExampleV2:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -86,7 +86,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "AngularReduxCrudExampleV2:build"
+            "browserTarget": "AngularAkitaCrudExampleV2:build"
           }
         },
         "test": {
@@ -110,5 +110,5 @@
       }
     }
   },
-  "defaultProject": "AngularReduxCrudExampleV2"
+  "defaultProject": "AngularAkitaCrudExampleV2"
 }
